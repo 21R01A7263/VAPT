@@ -49,9 +49,18 @@
 
   <script type="module" src="make.js"></script>
   <script>
-    function showTost1() {
+    async function showTost1() {
       Toastify({
         text: "Report Uploaded Successfully!",
+        duration: 3000,
+        gravity: "bottom", // Display at the bottom
+        position: "right", // Display at the right
+        backgroundColor: "green",
+        className: "toastify", // Apply custom class
+      }).showToast();
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      Toastify({
+        text: "You can view your report now.",
         duration: 3000,
         gravity: "bottom", // Display at the bottom
         position: "right", // Display at the right
