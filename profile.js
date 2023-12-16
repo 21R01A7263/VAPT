@@ -3,7 +3,7 @@ import { getParamsFromURL, saveOAuth2Info, logout } from "./utils.js";
 let params = getParamsFromURL(window.location.href);
 
 let ACCESS_TOKEN = "";
-let redirect_url = "http://127.0.0.1:5501/profile.html";
+let redirect_url = "https://vapt.vercel.app/profile.html";
 let button = document.getElementById("logout");
 let form = document.getElementById("form");
 let file = document.getElementById("files");
