@@ -22,7 +22,16 @@ window.onload = (event) => {
 function listFiles() {
   searchFiles("", 5);
 }
-
+function showTost1() {
+  Toastify({
+    text: "Report Deleted Successfully!",
+    duration: 3000,
+    gravity: "bottom", // Display at the bottom
+    position: "right", // Display at the right
+    backgroundColor: "green",
+    className: "toastify", // Apply custom class
+  }).showToast();
+}
 function searchFiles(q = "", pageSize) {
   result.innerHTML = "";
   var currentDate = new Date();
@@ -59,7 +68,7 @@ function searchFiles(q = "", pageSize) {
               })
               .then((info) => {
                 console.log(info)
-                alert('file is deleted')
+                showTost1();
               })
               
               ">Delete</button>
