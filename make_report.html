@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>VAPT Reports</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" href="styles1.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <ul>
+          <a href="./profile.html">
+            <button id="VAPT">VAPT Report</button>
+          </a>
+        </ul>
+        <ul>
+          <button id="signin">Sign In</button>
+        </ul>
+      </div>
+      <button id="showTost" onclick="showTost1()">Show Toast</button>
+      <div class="container">
+        <div class="title">
+          <p>Make your Report Here</p>
+        </div>
+        <div class="uploadouter">
+          <div class="uploaddiv">
+            <!-- File Upload Section -->
+            <input type="file" id="fileInput" accept=".pdf" />
+            <span id="fileNameDisplay"></span>
+            <button for="fileInput" id="uploadbtn">Upload Report</button>
+
+            <p id="fileName"></p>
+            <!-- ... (remaining HTML code) -->
+          </div>
+        </div>
+      </div>
+      <div id="toast-container"></div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <script type="module" src="make.js"></script>
+  <script>
+    function showTost1() {
+      Toastify({
+        text: "Report Uploaded Successfully!",
+        duration: 3000,
+        gravity: "bottom", // Display at the bottom
+        position: "right", // Display at the right
+        backgroundColor: "green",
+        className: "toastify", // Apply custom class
+      }).showToast();
+    }
+  </script>
+</html>
