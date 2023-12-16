@@ -38,7 +38,7 @@ function showTost1() {
     duration: 3000,
     gravity: "bottom", // Display at the bottom
     position: "right", // Display at the right
-    backgroundColor: "green",
+    backgroundColor: "red",
     className: "toastify", // Apply custom class
   }).showToast();
 }
