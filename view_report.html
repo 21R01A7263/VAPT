@@ -57,31 +57,23 @@
   </body>
   <script type="module" src="./view.js"></script>
   <script>
-    window.onload = function () {
-      setTimeout(function () {
-        // Your code here
-        // Show a success toast using Toastify
-        console.log("Shown");
-        Toastify({
-          text: "Reports Loaded Successfully!",
-          duration: 3000, // 3 seconds
-          gravity: "bottom", // "top" or "bottom"
-          position: "right", // "left", "center", or "right"
-          backgroundColor: "green",
-          className: "toastify", // Prevents dismissing the toast on hover/focus
-        }).showToast();
-      }, 1000);
-      console.log("Shown2"); // 1000 milliseconds = 1 second
-    };
-  </script>
-  <script>
+    function showTost2() {
+      Toastify({
+        text: "Reports Loaded!",
+        duration: 3000,
+        gravity: "bottom", // Display at the bottom
+        position: "right", // Display at the right
+        backgroundColor: "green",
+        className: "toastify", // Apply custom class
+      }).showToast();
+    }
     function showTost1() {
       Toastify({
         text: "Report Deleted Successfully!",
         duration: 3000,
         gravity: "bottom", // Display at the bottom
         position: "right", // Display at the right
-        backgroundColor: "red",
+        backgroundColor: "green",
         className: "toastify", // Apply custom class
       }).showToast();
     }
