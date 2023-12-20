@@ -170,7 +170,17 @@ body {
   margin-right: 45px;
   transition-duration: 300ms;
 }
-
+.bgimage{
+  margin-top: 5vh;
+  margin-left: 62vw;
+  min-height: 550px;
+  min-width: 550px;
+  background-image: url(./reverse-face-search.svg);
+  background-position: 90%;
+  background-repeat: no-repeat;
+  position: fixed;
+  opacity: 0.3;
+}
 #VAPT:hover {
   background-color: rgba(99, 99, 99, 0.445);
   cursor: pointer;
