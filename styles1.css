@@ -6,7 +6,17 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+.bgimage{
+  margin-top: 5vh;
+  margin-left: 62vw;
+  min-height: 550px;
+  min-width: 550px;
+  background-image: url(./reverse-face-search.svg);
+  background-position: 90%;
+  background-repeat: no-repeat;
+  position: fixed;
+  opacity: 0.3;
+}
 body {
   overflow: hidden;
   min-height: 100vh;
