@@ -9,8 +9,8 @@ html {
 .bgimage{
   margin-top: 5vh;
   margin-left: 62vw;
-  min-height: 550px;
-  min-width: 550px;
+  min-height: 500px;
+  min-width: 500px;
   background-image: url(./reverse-face-search.svg);
   background-position: 90%;
   background-repeat: no-repeat;
